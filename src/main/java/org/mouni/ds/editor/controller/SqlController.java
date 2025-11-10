@@ -16,7 +16,7 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/api/sql")
+@RequestMapping("/ds-editor/api/sql")
 public class SqlController {
 
     private static final Logger log = LoggerFactory.getLogger(SqlController.class);

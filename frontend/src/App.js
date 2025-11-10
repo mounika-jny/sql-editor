@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import ResultsTable from './components/ResultsTable';
 import QueryHistory from './components/QueryHistory';
+import { API_ENDPOINTS } from './config';
 import './App.css';
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
     setResults(null);
 
     try {
-      const response = await axios.post('/api/sql/run', {
+      const response = await axios.post(API_ENDPOINTS.SQL_RUN, {
         query: query.trim(),
         page: page,
         size: size
