@@ -1,1 +1,2 @@
 org.mouni.ds.editor.autoconfig.DsEditorAutoConfiguration
+org.mouni.ds.sqlrunner.autoconfig.SqlRunnerAutoConfiguration
